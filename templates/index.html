@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+ Главная страница
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+  {% for el in data %}
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">{{ el.title }}</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">{{ el.price }}<small class="text-muted fw-light">$</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+          </ul>
+          <a href="/buy/{{ el.id }}" class="w-100 btn btn-lg btn-outline-primary">Купить игрушку</a>
+          <!-- if you need a delete record in database with a button -->
+          <!-- <form action="/delete-item/{{ el.id }}/del" method="POST">
+            <input type="hidden" name="id" value="{{ data.id }}">
+            <input type="submit" value="Delete" class="btn btn-danger">
+        </form> -->
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

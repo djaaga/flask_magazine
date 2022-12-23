@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Создание поста
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <h1>Добавление поста</h1>
+  <form method="post">
+    <input type="title" name="title" id="title" class="form-control" placeholder="Пиши название"><br>
+    <textarea name="intro" id="intro" class="form-control" placeholder="Пиши анонс"></textarea><br>
+    <textarea name="text" id="intro" class="form-control" placeholder="Пиши text"></textarea><br>
+    <input type="submit" class="btn btn-success" value="Отправить">
+    
+</div>
+{% endblock %}

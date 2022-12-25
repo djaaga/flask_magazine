@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <title>{% block title %}{% endblock %}</title>
+    <style>
+      body {
+         background: rgb(255, 255, 255) url(https://f8n-production.s3.amazonaws.com/creators/profile/3bcsmzh0e-signage-toys-article-jpg-iim0ce.jpg);
+         color: rgb(0, 0, 0);
+         background-attachment: fixed;
+		     background-size: 95%;
+         background-position: center;
+         
+       }
+       </style>
 </head>
 <body>
     <header>
@@ -19,8 +29,8 @@
             <a class="me-3 py-2 text-dark text-decoration-none" href="/">Главная</a>
             <a class="me-3 py-2 text-dark text-decoration-none" href="/about">Про нас</a>
             <a class="me-3 py-2 text-dark text-decoration-none" href="/posts">Cтатьи</a>
-            <a class="btn btn-success" href="/create-item">Добваить Товар</a>
-            <a class="btn btn-warning" href="/create-article">Запостить</a>
+            <a class="btn btn-success" href="/create-item">Добваить Товар</a><br>
+            <a class="btn btn-warning" href="/create-article">Запостить</a><br>
           </nav>
         </div>
     
@@ -39,29 +49,17 @@
             <h5>Features</h5>
             <ul class="list-unstyled text-small">
               <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
-              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
-              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
-              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
-              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
-              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
             </ul>
           </div>
           <div class="col-6 col-md">
             <h5>Resources</h5>
             <ul class="list-unstyled text-small">
               <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
-              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
-              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
-              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
-            </ul>
           </div>
           <div class="col-6 col-md">
             <h5>About</h5>
             <ul class="list-unstyled text-small">
               <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
-              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
-              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
-              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
             </ul>
           </div>
         </div>
